@@ -24,4 +24,13 @@ public class Rectangle {
     public int area() {
         return width * height;
     }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "width=" + width +
+                ", height=" + height +
+                ", origin=" + origin +
+                '}';
+    }
 }
