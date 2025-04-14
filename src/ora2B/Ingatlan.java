@@ -2,7 +2,7 @@ package ora2B;
 
 enum Tipus {CSALADIHAZ, TARSASHAZ, HAZRESZ}
 
-public class Ingatlan implements IngatlanInterface {
+public class Ingatlan implements IngatlanInterface, Comparable<Ingatlan> {
     String telepules;
     double ar;
     int nm;
@@ -32,18 +32,7 @@ public class Ingatlan implements IngatlanInterface {
         this.tipus = tipus;
     }
 
-    public static void main(String[] a) {
-        Ingatlan ing1 = new Ingatlan("Debrecen",1000000.0,100,2.5,Tipus.TARSASHAZ);
-        Panel pan1 = new Panel("Debrecen",800000.0,100,4,Tipus.TARSASHAZ,4,false);
-        ing1.akcio(20);
-        pan1.akcio(0);
-        System.out.println(ing1);
-        System.out.println(pan1);
-        System.out.println("ugyannayi-e? "+pan1.ugyanannyi(ing1));
-
-    }
-
-    @Override
+      @Override
     public void akcio(int szazalek) {
         ar -= ar*szazalek/100.0;
     }
@@ -71,6 +60,12 @@ public class Ingatlan implements IngatlanInterface {
     @Override
     public double atlagos() {
         return nm/szobaszam;
+    }
+
+
+    @Override
+    public int compareTo(Ingatlan o) {
+        return Double.compare(teljesar(),o.teljesar());
     }
 }
 

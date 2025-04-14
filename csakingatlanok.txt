@@ -1,0 +1,5 @@
+INGATLAN#Budapest#250000#100#4#társasház
+INGATLAN#Debrecen#220000#120#5#családiház
+INGATLAN#Nyíregyháza#110000#60#2#házrész
+INGATLAN#Nyíregyháza#250000#160#6#családiház
+INGATLAN#Kisvárda#150000#50#2#társasház

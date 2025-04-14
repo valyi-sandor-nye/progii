@@ -1,0 +1,3 @@
+INGATLAN#Budapest#100000#100#4#társasház
+PANEL#Nyíregyháza#200000#68#4#társasház#4#igen
+PANEL#Budapest#300000#70#3#társasház#4#nem
